@@ -13,6 +13,7 @@ cls = lambda: os.system('cls')
 cls()
 
 if "1" in option: 
+    print('NOTE: Webhooks have to be in a discord.com/ format not a discordapp.com/ format\n\n')
     wh = input('Webhook Url: ')
     hook = Webhook(str(wh))
     message = input('Message to send: ')
@@ -25,6 +26,7 @@ if "1" in option:
         except Exception as e:
             print(f'Error. Hook is likely invalid {e}')
 if "2" in option:
+    print('NOTE: Webhooks have to be in a discord.com/ format not a discordapp.com/ format\n\n')
     wh = input('Webhook Url: ')
     hook = Webhook(str(wh))
     msgcount = input('Amount of messages to send: ')
